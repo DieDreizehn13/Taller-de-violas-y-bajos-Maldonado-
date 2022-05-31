@@ -40,12 +40,6 @@ body{
      background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);     
 }
 
-/* COPIA DEGRADE XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-body{
-     background-color: background-color: #7f5a83;
-     background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);     
-} */
-
 h1{
      color: #fffffe;
      font-family: 'Roboto', sans-serif;
@@ -238,10 +232,10 @@ a:hover{
 
      }
 
-/* ZOOM IN imagenes index XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+/* ZOOM IN imagenes index XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 .imgLat1:hover, .imgLat2:hover, .imgLat3:hover, .imgLat4:hover{
      transform: scale(115%);
-     transition: all 1s;  */
+     transition: all 1s; 
      
 
 /*KIT de compatibilidad web para todos los browsers*/
@@ -251,10 +245,10 @@ a:hover{
  
 }
 
-/* Duración animaciones fijas XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+/* Duración animaciones fijas XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 .animate__fadeIn{
      --animate-duration: 2s;
-   } */
+   }
 
 
 

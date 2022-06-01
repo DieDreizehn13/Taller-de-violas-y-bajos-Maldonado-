@@ -28,6 +28,7 @@ header nav ul li a{
      margin: 0 auto;  
 }
 
+
 body header{
      height: 20px;     
 }
@@ -266,3 +267,5 @@ a:hover{
      left: 50%;
      transform: translate(-50%, -50%);
    }
+
+/* BOOTSTRAP */

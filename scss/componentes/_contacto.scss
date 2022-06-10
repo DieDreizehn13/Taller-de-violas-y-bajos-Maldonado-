@@ -1,0 +1,36 @@
+header{
+    nav{
+        background-color: rgb(85, 84, 92); 
+        ul{
+            li{
+                list-style: none;
+                display: inline-block;
+                background-color: transparent;
+                font-size: medium;
+                margin: auto;  
+                text-align: center;
+                a{
+                    color: rgb(245, 245, 245);
+                }               
+            }
+            
+        } 
+        
+    } 
+    
+} 
+
+body{
+    background-color: black;
+    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);     
+    header{
+    height: 20px;     
+    }
+    main{
+        img{
+            opacity: 0.90; 
+        }
+    }
+}
+
+

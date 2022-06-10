@@ -4,22 +4,6 @@
     scroll-behavior: smooth;
 }
 
-nav{
-    background-color: rgb(85, 84, 92);     
-}
-
-header nav ul li{
-    list-style: none;
-    display: inline-block;
-    background-color: transparent;
-    font-size: medium;
-    margin: auto;  
-    text-align: center;               
-}
-
-header nav ul li a{
-    color: rgb(245, 245, 245);     
-}
 
 .listacaja, .centrarTodo, .txtDefault, .subsXS, .subtitulos{
     display: flex;
@@ -28,18 +12,6 @@ header nav ul li a{
     margin: 0 auto;  
 }
 
-
-body header{
-    height: 20px;     
-}
-
-/* font-family: 'Roboto', sans-serif;
-font-family: 'Source Sans Pro', sans-serif; */
-
-body{
-    background-color: black;
-    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);     
-}
 
 h1{
     color: #fffffe;
@@ -76,9 +48,6 @@ h2{
     list-style: none;
 } 
 
-body main img{
-    opacity: 0.95;
-}
 
 section p, p, section ol li{
     font-family: 'Roboto', sans-serif;

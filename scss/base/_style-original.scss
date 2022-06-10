@@ -4,7 +4,6 @@
     scroll-behavior: smooth;
 }
 
-
 .listacaja, .centrarTodo, .txtDefault, .subsXS, .subtitulos{
     display: flex;
     justify-content: center;
@@ -19,13 +18,6 @@ h1{
     font-size: 3.5rem;
 }
 
-h2{
-    color: #fffffe;
-    font-family: 'Roboto', sans-serif;
-    text-align: justify;
-    font-size: 2rem;     
-    margin: 3rem 11rem 5rem 11rem;     
-}
 
 .subtitulos{
     color: #fffffe;
@@ -48,28 +40,10 @@ h2{
     list-style: none;
 } 
 
-
-section p, p, section ol li{
-    font-family: 'Roboto', sans-serif;
-    font-size: large;
-    color: #fffffe;
-    background-color: transparent;     
-    margin: 3rem 11rem 5rem 11rem;
-    text-align: justify;
-}
-
 .card-text{
     color: black;
 }
 
-section ol li{
-    text-align: center;
-    list-style: none;
-}
-
-li{
-    list-style: none;
-}
 
 .txtDefault, .txtTabla{
     font-family: 'Roboto', sans-serif;
@@ -101,13 +75,6 @@ li{
     width: 70%;         
 }
 
-footer{
-    background-color: rgb(85, 84, 92);
-    color: aliceblue;
-    text-align: center;
-    border: 1px rgb(231, 230, 235) solid;
-}
-
 a{
     text-decoration: none;
     padding: 10px 0;
@@ -121,14 +88,6 @@ i{
     right: 0;
     bottom: 0;
 }
-
-main div img{     
-    margin: 20px auto;
-    border-radius: 20px;
-    width: 100%;
-    height: 100%;     
-}
-
 
 .mapa{
     width: 100%;
@@ -210,7 +169,7 @@ a:hover{
 
     }
 
-    /* ZOOM IN imagenes index XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* ZOOM IN imagenes index XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 .imgLat1:hover, .imgLat2:hover, .imgLat3:hover, .imgLat4:hover{
     transform: scale(115%);
     transition: all 1s; 
@@ -223,7 +182,7 @@ a:hover{
 
 }
 
-/* DuraciÃ³n animaciones fijas XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* Duracion animaciones fijas XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 .animate__fadeIn{
     --animate-duration: 2s;
   }

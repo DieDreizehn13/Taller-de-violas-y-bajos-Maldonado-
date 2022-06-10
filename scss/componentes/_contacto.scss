@@ -20,6 +20,7 @@ header{
     
 } 
 
+
 body{
     background-color: black;
     background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);     
@@ -28,9 +29,49 @@ body{
     }
     main{
         img{
-            opacity: 0.90; 
+            opacity: 0.90;
+
+            margin: 20px auto;
+            border-radius: 20px;
+            width: 100%;
+            height: 100%;   
         }
     }
 }
 
+
+section {
+    p{
+        font-family: 'Roboto', sans-serif;
+        font-size: large;
+        color: #fffffe;
+        background-color: transparent;     
+        margin: 3rem 11rem 5rem 11rem;
+        text-align: justify;  
+    }    
+    ol{        
+        li{
+            text-align: center;
+            list-style: none;
+            font-family: 'Roboto', sans-serif;
+            font-size: large;
+            color: #fffffe;
+            background-color: transparent;     
+            margin: 3rem 11rem 5rem 11rem;
+        }
+    } 
+}
+
+
+footer{
+    background-color: rgb(85, 84, 92);
+    color: aliceblue;
+    text-align: center;
+    border: 1px rgb(231, 230, 235) solid;
+    ul{
+        li{
+            list-style: none;   
+        }
+    }
+}
 

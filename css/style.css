@@ -1,9 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-}
-
 .listacaja, .centrarTodo, .txtDefault, .subsXS, .subtitulos {
   display: flex;
   justify-content: center;
@@ -11,24 +5,29 @@
   margin: 0 auto;
 }
 
-h1 {
+.txtDefault, .txtTabla, .subsXS, .subsXS2, .subtitulos, h1 {
   color: #fffffe;
   font-family: "Roboto", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+h1 {
   font-size: 3.5rem;
 }
 
 .subtitulos {
-  color: #fffffe;
-  font-family: "Roboto", sans-serif;
   text-align: center;
   font-size: 2rem;
   margin: 3rem auto 1rem auto;
 }
 
 .subsXS, .subsXS2 {
-  font-family: "Roboto", sans-serif;
   font-size: large;
-  color: #fffffe;
   background-color: transparent;
   margin: 3rem 11rem 1rem 11rem;
 }
@@ -43,9 +42,7 @@ h1 {
 }
 
 .txtDefault, .txtTabla {
-  font-family: "Roboto", sans-serif;
   font-size: 1rem;
-  color: #fffffe;
   background-color: transparent;
   text-align: justify;
   margin: 2rem 0 2rem 11rem;

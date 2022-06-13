@@ -5,32 +5,26 @@
 }
 
 .listacaja, .centrarTodo, .txtDefault, .subsXS, .subtitulos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;  
+    @extend %display; 
 }
 
 
 h1{
-    color: #fffffe;
-    font-family: 'Roboto', sans-serif;
+    @extend %colorFont; 
     font-size: 3.5rem;
 }
 
 
 .subtitulos{
-    color: #fffffe;
-    font-family: 'Roboto', sans-serif;
+    @extend %colorFont; 
     text-align: center;
     font-size: 2rem;     
     margin: 3rem auto 1rem auto;     
 }
 
 .subsXS, .subsXS2{
-    font-family: 'Roboto', sans-serif;
+    @extend %colorFont; 
     font-size: large;
-    color: #fffffe;
     background-color: transparent;     
     margin: 3rem 11rem 1rem 11rem;     
 }
@@ -46,9 +40,8 @@ h1{
 
 
 .txtDefault, .txtTabla{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    color: #fffffe;
+    @extend %colorFont; 
+    font-size: 1rem;    
     background-color: transparent;     
     text-align: justify;     
     margin: 2rem 0 2rem 11rem;     

@@ -1,0 +1,5 @@
+@mixin estiloTitulos ($color1, $tamano1, $letra1){
+    color: $color1;
+    font-size: $tamano1;
+    font-family: $letra1;
+}

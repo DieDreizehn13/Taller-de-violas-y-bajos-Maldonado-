@@ -1,3 +1,5 @@
+// A LOS MIXIN (A DIFERENCIA DE LOS EXTENDS) SE LES PUEDEN PONER PARAMETROS
+
 @mixin estiloTitulos ($color1, $tamano1, $letra1){
     color: $color1;
     font-size: $tamano1;

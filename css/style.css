@@ -5,7 +5,7 @@
   margin: 0 auto;
 }
 
-.txtDefault, .txtTabla, .subsXS, .subsXS2, .subtitulos, h1 {
+section ol li, section p, .txtDefault, .txtTabla, .subsXS, .subsXS2, .subtitulos, h1 {
   color: #fffffe;
   font-family: "Roboto", sans-serif;
 }
@@ -248,9 +248,7 @@ body main img {
 }
 
 section p {
-  font-family: "Roboto", sans-serif;
   font-size: large;
-  color: #fffffe;
   background-color: transparent;
   margin: 3rem 11rem 5rem 11rem;
   text-align: justify;
@@ -258,9 +256,7 @@ section p {
 section ol li {
   text-align: center;
   list-style: none;
-  font-family: "Roboto", sans-serif;
   font-size: large;
-  color: #fffffe;
   background-color: transparent;
   margin: 3rem 11rem 5rem 11rem;
 }

@@ -1,7 +1,15 @@
-// A LOS MIXIN (A DIFERENCIA DE LOS EXTENDS) SE LES PUEDEN PONER PARAMETROS
+// A LOS MIXIN (A DIFERENCIA DE LOS EXTENDS) SE LES PUEDEN PONER PARAMETROS y permite dejar parámetros vacíos
 
-@mixin estiloTitulos ($color1, $tamano1, $letra1){
-    color: $color1;
-    font-size: $tamano1;
-    font-family: $letra1;
+@mixin estiloTxt ($bgColorX, $tamanoX, $alinearX, $margenX){
+    background-color: $bgColorX;
+    font-size: $tamanoX;
+    text-align: $alinearX;     
+    margin: $margenX; 
 }
+
+@mixin estiloA ($decoX, $padX, $dispX){
+    text-decoration: $decoX;
+    padding: $padX;
+    display: $dispX;
+}
+

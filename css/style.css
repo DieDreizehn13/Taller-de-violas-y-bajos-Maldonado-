@@ -42,8 +42,8 @@ h1 {
 }
 
 .txtDefault, .txtTabla {
-  font-size: 1rem;
   background-color: transparent;
+  font-size: 1rem;
   text-align: justify;
   margin: 2rem 0 2rem 11rem;
 }

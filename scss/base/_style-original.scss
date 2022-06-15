@@ -39,11 +39,8 @@ h1{
 }
 
 .txtDefault, .txtTabla{
-    @extend %colorFont; 
-    font-size: 1rem;    
-    background-color: transparent;     
-    text-align: justify;     
-    margin: 2rem 0 2rem 11rem;     
+    @extend %colorFont;
+    @include estiloTxt($bgColorX, $tamanoX, $alinearX, $margenX);   
 }
 
 .txtTabla{
@@ -68,9 +65,7 @@ h1{
 }
 
 a{
-    text-decoration: none;
-    padding: 10px 0;
-    display: inline-block;
+    @include estiloA($decoX, $padX, $dispX);
 }
 
 i{

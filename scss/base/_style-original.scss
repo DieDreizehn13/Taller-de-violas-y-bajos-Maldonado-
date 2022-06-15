@@ -17,16 +17,16 @@ h1{
 
 .subtitulos{
     @extend %colorFont; 
-    text-align: center;
-    font-size: 2rem;     
-    margin: 3rem auto 1rem auto;     
+    text-align: map-get($subsFormat, alineado);
+    font-size: map-get($subsFormat, tamano);   
+    margin: map-get($subsFormat, margen);     
 }
 
 .subsXS, .subsXS2{
     @extend %colorFont; 
-    font-size: large;
-    background-color: transparent;     
-    margin: 3rem 11rem 1rem 11rem;     
+    font-size: map-get($subsXSFormat, tamano2);
+    background-color: map-get($subsXSFormat, bg-col);    
+    margin: map-get($subsXSFormat, margen2);    
 }
 
 .subsXS2{
@@ -37,7 +37,6 @@ h1{
 .card-text{
     color: black;
 }
-
 
 .txtDefault, .txtTabla{
     @extend %colorFont; 
@@ -124,24 +123,6 @@ a:hover{
     grid-area: imgLat4;
     height: 400px;
     width: 500px;     
-}
-
-.pictsTaller{    
-    display: grid;
-    align-items: center;
-    justify-content: center;     
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: 
-    "imgTall1 imgTall2"
-    "imgTall3 imgTall4";              
-}
-
-.pictsTaller img{
-    padding-left: 3rem;
-    padding-right: 3rem;
-    max-width: 97%;
-    max-height: 97%;
 }
 
 /* MOBILE */

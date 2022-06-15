@@ -126,22 +126,6 @@ a:hover {
   width: 500px;
 }
 
-.pictsTaller {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: "imgTall1 imgTall2" "imgTall3 imgTall4";
-}
-
-.pictsTaller img {
-  padding-left: 3rem;
-  padding-right: 3rem;
-  max-width: 97%;
-  max-height: 97%;
-}
-
 /* MOBILE */
 @media screen and (max-width: 1023px) {
   /* TALLER */

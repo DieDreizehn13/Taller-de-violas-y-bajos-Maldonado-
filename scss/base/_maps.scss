@@ -1,6 +1,13 @@
-// DISTINTAS PROPIEDADES (SE USAN DE A UNA A LA VEZ)
-$header:(
-    background-head: gray,
-    decoracion: none,
-    bordes: 4px solid rgb(155, 41, 41),
+// DISTINTAS PROPIEDADES (SE USAN DE A UNA A LA VEZ y se crean con $ y paretesis adelante)
+$subsFormat:(
+    alineado: center,
+    tamano: 2rem,     
+    margen: 3rem auto 1rem auto,
 );
+
+$subsXSFormat:(
+    tamano2: large,
+    bg-col: transparent,     
+    margen2: 3rem 11rem 1rem 11rem, 
+);
+

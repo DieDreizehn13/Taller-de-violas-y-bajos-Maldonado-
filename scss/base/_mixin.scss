@@ -1,5 +1,3 @@
-// A LOS MIXIN (A DIFERENCIA DE LOS EXTENDS) SE LES PUEDEN PONER PARAMETROS y permite dejar parámetros vacíos
-
 @mixin estiloTxt ($bgColorX, $tamanoX, $alinearX, $margenX){
     background-color: $bgColorX;
     font-size: $tamanoX;

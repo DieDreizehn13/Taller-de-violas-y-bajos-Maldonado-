@@ -28,7 +28,7 @@
         <nav>
             <ul class="listacaja">
                 <li><a href="index.html">INICIO</a></li>
-                <li><a href="./pages/sobremi.html#pie_sobre_mi">SOBRE MÍ</a></li>
+                <li><a href="./pages/sobremi.html">SOBRE MÍ</a></li>
                 <li><a href="./pages/taller.html">TALLER</a></li>
                 <li><a href="./pages/trabajos.html">TRABAJOS</a></li>
                 <li><a href="./pages/contacto.html">CONTACTO</a></li>
@@ -105,5 +105,17 @@
         crossorigin="anonymous"></script>
 
 </body>
+
+<script>
+
+    window.addEventListener("load", function(event) {
+    
+    document.getElementsByClassName("disclaimer")[0].remove();
+    
+    console.log("Eliminado!");
+    
+    });
+    
+</script>
 
 </html>

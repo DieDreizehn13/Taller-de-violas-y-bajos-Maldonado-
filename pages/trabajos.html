@@ -18,7 +18,6 @@
         href="https\://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300;1,700&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap"
         rel="stylesheet">
     <link rel="shortcut icon" href="./assets/img/guitar-icon.png">
-    <script src="https://kit.fontawesome.com/4f09661378.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -36,75 +35,61 @@
     </header>
 
     <main>
-        <section>
+        <section class="fotosTaller">
             <p class="subtitulos">TRABAJOS</p>
-            <div class="centrarTodo">
-                <table class="txtTabla">
-                    <tr>
-                        <th>Instrumento</th>
-                        <th>Tipo de trabajo</th>
-                        <th>Demora (Días)</th>
-                        <th>Precio</th>
-                    </tr>
 
-                    <tr>
-                        <td>Guitarra</td>
-                        <td>Calibración</td>
-                        <td>2</td>
-                        <td>$4.000</td>
-                    </tr>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../assets/img/335.jpg" class="d-block w-100" alt="Gibson 335">
+                    </div>
 
-                    <tr>
-                        <td>Bajo</td>
-                        <td>Calibración</td>
-                        <td>3</td>
-                        <td>$5.500</td>
-                    </tr>
+                    <div class="carousel-item">
+                        <img src="../assets/img/les paul.jpg" class="d-block w-100" alt="Gibson Les Paul 59">
+                    </div>
 
-                    <tr>
-                        <td>Ukelele</td>
-                        <td>Calibración</td>
-                        <td>1</td>
-                        <td>$1.500</td>
-                    </tr>
+                    <div class="carousel-item">
+                        <img src="../assets/img/stratocaster.jpg" class="d-block w-100" alt="Fender Stratocaster">
+                    </div>
 
-                    <tr>
-                        <td>Guitarra/Bajo</td>
-                        <td>Pintura de cuerpo</td>
-                        <td>30</td>
-                        <td>$15.000</td>
-                    </tr>
+                    <div class="carousel-item">
+                        <img src="../assets/img/telecaster.jpg" class="d-block w-100" alt="Fender Telecaster">
+                    </div>
 
-                    <tr>
-                        <td>Ukelele</td>
-                        <td>Reparación mastil partido</td>
-                        <td>15</td>
-                        <td>$9.900</td>
-                    </tr>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
 
-                </table>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
 
-            </div>
+                </div>
 
-        </section>
-
-        <section class="audiocontenedor">
-            <p class="txtDefault"> GUITARRA RECIÉN CALIBRADA Y AFINADA EN RE </p>
-            <div class="multimedia">
-                <audio class="audioGuitarra" src="../assets/audio/acoustic guitar song.mp3" controls title="Guitarra recién calibrada y afinada en Re"></audio>
-            </div>
-        </section>
-
-        <section>
-            <p class="txtDefault"> GUITARRA RECTIFICADA CON CUERDAS 0.11</p>
-            <div class="multimedia">
-                <video src="../assets/video/man playing guitar.mp4" controls title="Video de guitarra rectificada con cuerdas 0.11"></video>
-            </div>
-        </section>
+                <section class="audiocontenedor">
+                    <p class="txtDefault"> GUITARRA RECIÉN CALIBRADA Y AFINADA EN RE </p>
+                    <div class="multimedia">
+                        <audio class="audioGuitarra" src="../assets/audio/acoustic guitar song.mp3" controls title="Guitarra recién calibrada y afinada en Re"></audio>
+                    </div>
+                </section>
+        
+                <section>
+                    <p class="txtDefault"> GUITARRA RECTIFICADA CON CUERDAS 0.11</p>
+                    <div class="multimedia">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/lc8bR7djkBg"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe> 
+                    </div>
+                </section>
 
     </main>
 
-    <footer id="pie_trabajos">
+    <footer id="pie_taller">
         <ul>
             <li>Daniel Hernan Lambertucci</li>
             <li>lambertucciluthier@gmail.com</li>
@@ -112,8 +97,6 @@
             <li>Av. Nazca 3766, CABA</li>
         </ul>
     </footer>
-
-    <a href="#top"><i class="fa-solid fa-guitar"></i></a>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

@@ -38,18 +38,11 @@ h1{
     color: black;
 }
 
-.txtDefault, .txtTabla{
+.txtDefault{
     @extend %colorFont;
     @include estiloTxt($bgColorX, $tamanoX, $alinearX, $margenX);   
 }
 
-.txtTabla{
-         width: 70%; 
-}
-
-.txtTabla, .txtTabla td{
-    border: 1px solid white;
-}
 
 .multimedia{
     display: flex;
@@ -61,7 +54,7 @@ h1{
 }
 
 .audioGuitarra{
-    width: 70%;         
+    width: 40%;         
 }
 
 a{
@@ -89,11 +82,11 @@ a:hover{
 .portadaGrid{    
     display: grid;
     margin: 0 auto;       
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
-    "imgLat1 imgLat2"
-    "imgLat3 imgLat4";      
+    ". imgLat1 imgLat2 ."
+    ". imgLat3 imgLat4 .";      
 }
 
 .imgLat1{
@@ -120,34 +113,51 @@ a:hover{
     width: 500px;     
 }
 
-/* MOBILE */
-@media screen and (max-width: 1023px) { 
+/* MOBILE---------------------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) { 
 
-    /* TALLER */
-    .portadaGrid, .pictsTaller{
-         display: block;
-         margin: 20px auto;
-         border-radius: 10px;
-         width: 40%;
-         height: 10%;               
+    // INDEX
+.portadaGrid{    
+        display: grid;
+        margin: 0 auto;       
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        "imgLat1"
+        "imgLat2"
+        "imgLat3" 
+        "imgLat4";
     }
 
-    .multimedia video{
-         max-width:90%;          
+    }
+/* TABLET---------------------------------------------------------------------------------------- */
+@media screen and (max-width: 576px) { 
+
+    // INDEX
+    .portadaGrid{    
+        display: grid;
+        margin: 0 auto;       
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        "imgLat1"
+        "imgLat2"
+        "imgLat3" 
+        "imgLat4";     
     }
 
     }
 
 /* ZOOM IN imagenes index XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 .imgLat1:hover, .imgLat2:hover, .imgLat3:hover, .imgLat4:hover{
-    transform: scale(115%);
-    transition: all 1s; 
+    transform: scale(105%);
+    transition: all 0.4s; 
     
 
 /*KIT de compatibilidad web para todos los browsers*/
-    -webkit-transform: scale(115%);
-    -o-transform:scale(115%);
-    -moz-transform: scale(115%);     
+    -webkit-transform: scale(105%);
+    -o-transform:scale(105%);
+    -moz-transform: scale(105%);     
 
 }
 

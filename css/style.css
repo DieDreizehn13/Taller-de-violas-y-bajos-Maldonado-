@@ -5,9 +5,55 @@
   margin: 0 auto;
 }
 
-section ol li, section p, .txtDefault, .subsXS, .subsXS2, .subtitulos, h1 {
+.txtDefault, .subsXS, .subsXS2, .subtitulos {
   color: #fffffe;
   font-family: "Roboto", sans-serif;
+}
+
+header nav {
+  background-color: rgb(85, 84, 92);
+}
+header nav ul li {
+  list-style: none;
+  display: inline-block;
+  background-color: transparent;
+  margin: auto;
+  text-align: center;
+}
+header nav ul li a {
+  color: rgb(245, 245, 245);
+}
+
+body {
+  background-color: black;
+  background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+}
+body header {
+  height: 10%;
+}
+body main img {
+  opacity: 0.9;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+section p {
+  color: #fffffe;
+  font-family: "Roboto", sans-serif;
+  background-color: transparent;
+  margin: 1.5rem 3rem 1.5rem 3rem;
+  text-align: justify;
+}
+
+footer {
+  background-color: rgb(85, 84, 92);
+  color: aliceblue;
+  text-align: center;
+  border: 1px rgb(231, 230, 235) solid;
+}
+footer ul li {
+  list-style: none;
 }
 
 * {
@@ -16,18 +62,19 @@ section ol li, section p, .txtDefault, .subsXS, .subsXS2, .subtitulos, h1 {
   scroll-behavior: smooth;
 }
 
-h1 {
-  font-size: 3.5rem;
+.mobileText {
+  display: none;
+}
+
+body {
+  font-size: 20px;
 }
 
 .subtitulos {
-  text-align: center;
-  font-size: 2rem;
-  margin: 3rem auto 1rem auto;
+  margin: 1rem auto 1rem auto;
 }
 
 .subsXS, .subsXS2 {
-  font-size: large;
   background-color: transparent;
   margin: 3rem 11rem 1rem 11rem;
 }
@@ -42,10 +89,7 @@ h1 {
 }
 
 .txtDefault {
-  background-color: transparent;
-  font-size: 1rem;
-  text-align: justify;
-  margin: 2rem 0 2rem 11rem;
+  margin: 1rem auto 1rem auto;
 }
 
 .multimedia {
@@ -59,7 +103,7 @@ h1 {
 }
 
 .audioGuitarra {
-  width: 40%;
+  width: 65%;
 }
 
 a {
@@ -70,7 +114,6 @@ a {
 
 i {
   color: rgb(138, 92, 196);
-  font-size: 50px;
   position: fixed;
   right: 0;
   bottom: 0;
@@ -78,7 +121,7 @@ i {
 
 .mapa {
   width: 100%;
-  height: 700px;
+  height: 500px;
 }
 
 a:hover {
@@ -98,46 +141,30 @@ a:hover {
   grid-area: imgLat1;
   height: 400px;
   width: 500px;
+  margin: 3rem 3rem 3rem 3rem;
 }
 
 .imgLat2 {
   grid-area: imgLat2;
   height: 400px;
   width: 500px;
+  margin: 3rem 3rem 3rem 3rem;
 }
 
 .imgLat3 {
   grid-area: imgLat3;
   height: 400px;
   width: 500px;
+  margin: 3rem 3rem 3rem 3rem;
 }
 
 .imgLat4 {
   grid-area: imgLat4;
   height: 400px;
   width: 500px;
+  margin: 3rem 3rem 3rem 3rem;
 }
 
-/* MOBILE---------------------------------------------------------------------------------------- */
-@media screen and (max-width: 768px) {
-  .portadaGrid {
-    display: grid;
-    margin: 0 auto;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: "imgLat1" "imgLat2" "imgLat3" "imgLat4";
-  }
-}
-/* TABLET---------------------------------------------------------------------------------------- */
-@media screen and (max-width: 576px) {
-  .portadaGrid {
-    display: grid;
-    margin: 0 auto;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: "imgLat1" "imgLat2" "imgLat3" "imgLat4";
-  }
-}
 /* ZOOM IN imagenes index XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 .imgLat1:hover, .imgLat2:hover, .imgLat3:hover, .imgLat4:hover {
   transform: scale(105%);
@@ -169,88 +196,93 @@ a:hover {
 }
 
 /* BOOTSTRAP */
-.btn-primary {
-  color: black;
-  background-color: #9fa19f;
-  border-color: #080808;
-}
-
-.card {
-  background-color: rgb(10, 163, 168);
-}
-
-.btn-primary2 {
-  color: rgb(138, 115, 11);
-  background-color: #ffffff;
-  border-color: #080808;
-}
-
-.card2 {
-  background-color: rgb(9, 221, 62);
-}
-
-.btn {
-  font-size: 1.5rem;
-}
-
 .alert-danger {
   color: #050505;
   background-color: #f58d48;
   border-color: #141414;
 }
 
-header nav {
-  background-color: rgb(85, 84, 92);
+/* TABLET---------------------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+  .portadaGrid {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "imgLat1" "imgLat2" "imgLat3" "imgLat4";
+  }
+  body {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  section p {
+    color: #fffffe;
+    font-family: "Roboto", sans-serif;
+    background-color: transparent;
+    margin: 1.5rem 3rem 1.5rem 3rem;
+    text-align: justify;
+  }
+  .mapa {
+    width: 100%;
+    height: 400px;
+  }
+  .multimedia {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem auto 2.5rem auto;
+    max-width: 100%;
+    height: auto;
+  }
 }
-header nav ul li {
-  list-style: none;
-  display: inline-block;
-  background-color: transparent;
-  font-size: medium;
-  margin: auto;
-  text-align: center;
-}
-header nav ul li a {
-  color: rgb(245, 245, 245);
-}
-
-body {
-  background-color: black;
-  background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
-}
-body header {
-  height: 20px;
-}
-body main img {
-  opacity: 0.9;
-  margin: 20px auto;
-  border-radius: 20px;
-  width: 100%;
-  height: 100%;
-}
-
-section p {
-  font-size: large;
-  background-color: transparent;
-  margin: 3rem 11rem 5rem 11rem;
-  text-align: justify;
-}
-section ol li {
-  text-align: center;
-  list-style: none;
-  font-size: large;
-  background-color: transparent;
-  margin: 3rem 11rem 5rem 11rem;
-}
-
-footer {
-  background-color: rgb(85, 84, 92);
-  color: aliceblue;
-  text-align: center;
-  border: 1px rgb(231, 230, 235) solid;
-}
-footer ul li {
-  list-style: none;
+/* MOBILE---------------------------------------------------------------------------------------- */
+@media screen and (max-width: 576px) {
+  .portadaGrid {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "imgLat1" "imgLat2" "imgLat3" "imgLat4";
+  }
+  body {
+    font-size: 11px;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  section p {
+    display: none;
+  }
+  .mobileText {
+    display: flex;
+  }
+  .audioGuitarra {
+    width: 90%;
+  }
+  .mapa {
+    width: 100%;
+    height: 330px;
+  }
+  .multimedia {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto 1rem auto;
+    max-width: 100%;
+    height: auto;
+  }
+  .imgLat1:hover, .imgLat2:hover, .imgLat3:hover, .imgLat4:hover {
+    transform: scale(100%);
+  }
+  .imgLat1, .imgLat2, .imgLat3, .imgLat4 {
+    width: 80%;
+    height: auto;
+    margin: 1rem auto 1rem auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

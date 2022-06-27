@@ -1,6 +1,5 @@
-@mixin estiloTxt ($bgColorX, $tamanoX, $alinearX, $margenX){
-    background-color: $bgColorX;
-    font-size: $tamanoX;
+@mixin estiloTxt ($bgColorX, $alinearX, $margenX){
+    background-color: $bgColorX;    
     text-align: $alinearX;     
     margin: $margenX; 
 }

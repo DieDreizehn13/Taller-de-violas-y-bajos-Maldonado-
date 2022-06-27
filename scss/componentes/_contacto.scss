@@ -6,7 +6,6 @@ header{
                 list-style: none;
                 display: inline-block;
                 background-color: transparent;
-                font-size: medium;
                 margin: auto;  
                 text-align: center;
                 a{
@@ -21,42 +20,32 @@ header{
 } 
 
 
-body{
+body{    
     background-color: black;
     background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);     
     header{
-    height: 20px;     
+    height: 10%;     
     }
     main{
+        
         img{
             opacity: 0.90;
-            margin: 20px auto;
-            border-radius: 20px;
+            margin: 0 auto;            
             width: 100%;
             height: 100%;   
         }
     }
-}
 
+}
 
 section {
     p{
-        @extend %colorFont;
-        font-size: large;        
+        color: #fffffe;
+        font-family: 'Roboto', sans-serif;              
         background-color: transparent;     
-        margin: 3rem 11rem 5rem 11rem;
+        margin: 1.5rem 3rem 1.5rem 3rem;
         text-align: justify;  
-    }    
-    ol{        
-        li{
-            @extend %colorFont;
-            text-align: center;
-            list-style: none;            
-            font-size: large;            
-            background-color: transparent;     
-            margin: 3rem 11rem 5rem 11rem;
-        }
-    } 
+    }
 }
 
 
@@ -72,3 +61,265 @@ footer{
     }
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.mobileText{
+    display: none;
+}
+
+.listacaja, .centrarTodo, .txtDefault, .subsXS, .subtitulos{
+    @extend %display;
+}
+
+body{font-size: 20px}
+
+.subtitulos{
+    @extend %colorFont;
+    margin: map-get($subsFormat, margen);
+}
+
+.subsXS, .subsXS2{
+    @extend %colorFont;
+    background-color: map-get($subsXSFormat, bg-col);
+    margin: map-get($subsXSFormat, margen2);
+}
+
+.subsXS2{
+    margin: 3rem 0 1rem 3rem;
+    list-style: none;
+}
+
+.card-text{
+    color: black;
+}
+
+.txtDefault{
+    @extend %colorFont;
+    margin: 1rem auto 1rem auto,
+}
+
+.multimedia{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem auto 5rem auto;
+    max-width:100%;height:auto;
+}
+
+.audioGuitarra{
+    width: 65%;
+}
+
+a{
+    @include estiloA($decoX, $padX, $dispX);
+}
+
+i{
+    color: rgb(138, 92, 196);    
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.mapa{
+    width: 100%;
+    height: 500px;
+}
+
+a:hover{
+    color: crimson;
+    text-decoration: underline;
+}
+
+.portadaGrid{
+    display: grid;
+    margin: 0 auto;    
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    ". imgLat1 imgLat2 ."
+    ". imgLat3 imgLat4 .";
+}
+
+.imgLat1{
+    grid-area: imgLat1;
+    height: 400px;
+    width: 500px;
+    margin: 3rem 3rem 3rem 3rem;
+}
+
+.imgLat2{
+    grid-area: imgLat2;
+    height: 400px;
+    width: 500px;
+    margin: 3rem 3rem 3rem 3rem;
+}
+
+.imgLat3{
+    grid-area: imgLat3;
+    height: 400px;
+    width: 500px;
+    margin: 3rem 3rem 3rem 3rem;
+}
+
+.imgLat4{
+    grid-area: imgLat4;
+    height: 400px;
+    width: 500px;
+    margin: 3rem 3rem 3rem 3rem;
+}
+
+
+/* ZOOM IN imagenes index XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+.imgLat1:hover, .imgLat2:hover, .imgLat3:hover, .imgLat4:hover{
+    transform: scale(105%);
+    transition: all 0.4s;
+
+/*KIT de compatibilidad web para todos los browsers*/
+    -webkit-transform: scale(105%);
+    -o-transform:scale(105%);
+    -moz-transform: scale(105%);
+}
+
+/* Duracion animaciones fijas XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+.animate__fadeIn{
+    --animate-duration: 2s;
+  }
+
+
+/* CONTENEDOR PRINCIPAL IMAGEN Y TEXTO ENCIMA */
+.contenedor {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+/* TEXTO CENTRADO */
+.texto-encima {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+/* BOOTSTRAP */
+
+.alert-danger {
+    color: #050505;
+    background-color: #f58d48;
+    border-color: #141414;
+}
+
+/* TABLET---------------------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+
+    .portadaGrid{
+            display: grid;
+            margin: 0 auto;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas:
+            "imgLat1"
+            "imgLat2"
+            "imgLat3"
+            "imgLat4";
+        }
+    
+    body{font-size: 15px}
+    
+    h1{font-size: 30px}
+    
+    section {
+        p{
+            color: #fffffe;
+            font-family: 'Roboto', sans-serif;              
+            background-color: transparent;     
+            margin: 1.5rem 3rem 1.5rem 3rem;
+            text-align: justify;  
+        }
+    }
+
+    .mapa{
+        width: 100%;
+        height: 400px;
+    }
+
+    .multimedia{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 1.5rem auto 2.5rem auto;
+        max-width:100%;
+        height:auto;
+    }
+    
+        }
+        
+/* MOBILE---------------------------------------------------------------------------------------- */
+ @media screen and (max-width: 576px) {
+    
+    .portadaGrid{
+            display: grid;
+            margin: 0 auto; 
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas:
+            "imgLat1"
+            "imgLat2"
+            "imgLat3"
+            "imgLat4";
+        }
+    
+    body{font-size: 11px}
+    
+    h1{font-size: 18px}
+    
+    section {
+        p{
+            display: none;  
+        }
+    
+        }
+
+    .mobileText{
+            display:flex;
+        }
+     
+    .audioGuitarra{
+            width: 90%;
+        }
+
+    .mapa{
+            width: 100%;
+            height: 330px;
+        }
+
+    .multimedia{
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem auto 1rem auto;
+            max-width:100%;
+            height:auto;
+        }
+
+    // ANULAR HOVER en mobile
+    .imgLat1:hover, .imgLat2:hover, .imgLat3:hover, .imgLat4:hover{
+            transform: scale(100%);    
+    }
+
+    // IMAGENES RESPONSIVAS    
+    .imgLat1, .imgLat2, .imgLat3, .imgLat4{
+        width: 80%;
+        height: auto;
+        margin: 1rem auto 1rem auto;
+    }
+        
+    }

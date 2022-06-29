@@ -6,7 +6,7 @@ header{
                 list-style: none;
                 display: inline-block;
                 background-color: transparent;
-                margin: auto;  
+                margin: 0 auto;  
                 text-align: center;
                 a{
                     color: rgb(245, 245, 245);
@@ -43,7 +43,7 @@ section {
         color: #fffffe;
         font-family: 'Roboto', sans-serif;              
         background-color: transparent;     
-        margin: 1.5rem 3rem 1.5rem 3rem;
+        margin: 1.5rem 10rem 1.5rem 10rem;
         text-align: justify;  
     }
 }
@@ -75,7 +75,7 @@ footer{
     @extend %display;
 }
 
-body{font-size: 20px}
+body{font-size: 15px}
 
 .subtitulos{
     @extend %colorFont;
@@ -86,6 +86,7 @@ body{font-size: 20px}
     @extend %colorFont;
     background-color: map-get($subsXSFormat, bg-col);
     margin: map-get($subsXSFormat, margen2);
+    text-align: left;
 }
 
 .subsXS2{
@@ -230,7 +231,7 @@ a:hover{
             "imgLat4";
         }
     
-    body{font-size: 15px}
+    body{font-size: 14px}
     
     h1{font-size: 30px}
     
@@ -239,7 +240,7 @@ a:hover{
             color: #fffffe;
             font-family: 'Roboto', sans-serif;              
             background-color: transparent;     
-            margin: 1.5rem 3rem 1.5rem 3rem;
+            margin: 1.5rem 4.5rem 1.5rem 4.5rem;
             text-align: justify;  
         }
     }
@@ -276,7 +277,7 @@ a:hover{
             "imgLat4";
         }
     
-    body{font-size: 11px}
+    body{font-size: 12px}
     
     h1{font-size: 18px}
     

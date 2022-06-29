@@ -249,7 +249,7 @@ a:hover {
     grid-template-areas: "imgLat1" "imgLat2" "imgLat3" "imgLat4";
   }
   body {
-    font-size: 12px;
+    font-size: 11px;
   }
   h1 {
     font-size: 18px;
@@ -259,6 +259,7 @@ a:hover {
   }
   .mobileText {
     display: flex;
+    margin: 1rem 2rem 1rem 2rem;
   }
   .audioGuitarra {
     width: 90%;
